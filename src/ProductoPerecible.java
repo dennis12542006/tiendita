@@ -14,4 +14,10 @@ public class ProductoPerecible extends Producto {
     public boolean estaVencido(String fechaHoy) {
         return fechaVencimiento.compareTo(fechaHoy) < 0;
     }
+
+    @Override
+    public void mostrarInfo(){
+        super.mostrarInfo();
+        System.out.println("fecha de vencimiento: " + fechaVencimiento);
+    }
 }

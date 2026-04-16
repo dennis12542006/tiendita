@@ -10,4 +10,10 @@ public class ProductoElectronico extends Producto {
     public void mostrarGarantia(){
         System.out.println("Garantia de: " + garantiaMeses );
     }
+
+    @Override
+    public void mostrarInfo(){
+        super.mostrarInfo();
+        System.out.println("Garantía: " + garantiaMeses + " meses");
+    }
 }
