@@ -32,9 +32,9 @@ public class ProductoPerecible extends Producto implements Vendible, Notificable
     @Override
     public double calcularPrecioFinal() {
         if (proximoAVencer) {
-            return getPrecio() * 0.85; // 15% descuento
+            return getPrecio() * 0.85;
         }
-        return getPrecio() * 1.19; // precio normal + IVA
+        return getPrecio() * 1.19;
     }
 
     @Override

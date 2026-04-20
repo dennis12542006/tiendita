@@ -9,7 +9,6 @@ public abstract class Producto {
         this.stock = stock;
     }
 
-    // Método concreto — todas las hijas lo heredan igual
     public void vender(int cantidad) {
         if (cantidad > stock) {
             System.out.println("Stock insuficiente. Disponible: " + stock);
@@ -18,10 +17,8 @@ public abstract class Producto {
         stock = stock - cantidad;
     }
 
-    // Método abstracto — cada hija DEBE implementarlo a su manera
     public abstract void mostrarInfo();
 
-    // Getters
     public String getNombre() { return nombre; }
     public double getPrecio() { return precio; }
     public int getStock() { return stock; }

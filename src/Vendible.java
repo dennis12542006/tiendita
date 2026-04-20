@@ -1,5 +1,5 @@
 public interface Vendible {
-    double calcularPrecioFinal(); // podría aplicar descuentos, impuestos, etc.
+    double calcularPrecioFinal();
     boolean estaDisponible();
 }
 
